@@ -45,5 +45,16 @@ After installation, verify that kubectl is installed and accessible by checking 
 ```bash
 kubectl version --client
 ```
+-----
+
+## 8. Install eksctl.
+
+```bash
+curl -sL "https://github.com/eksctl-io/eksctl/releases/latest/download/eksctl_Linux_amd64.tar.gz" -o /tmp/eksctl.tar.gz
+sudo tar -xzf /tmp/eksctl.tar.gz -C /tmp
+sudo mv /tmp/eksctl /usr/local/bin
+eksctl version
+```
+
 
 You should now see the client version output, confirming a successful installation.
